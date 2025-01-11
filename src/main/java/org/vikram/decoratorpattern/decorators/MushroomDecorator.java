@@ -3,7 +3,7 @@ package org.vikram.decoratorpattern.decorators;
 import org.vikram.decoratorpattern.component.BasePizza;
 
 public class MushroomDecorator extends ToppingDecorator{
-    private BasePizza basePizza;
+    private final BasePizza basePizza;
 
     public MushroomDecorator(BasePizza basePizza) {
         this.basePizza = basePizza;
