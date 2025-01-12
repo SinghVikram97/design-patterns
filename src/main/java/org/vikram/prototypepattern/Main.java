@@ -1,4 +1,4 @@
-package org.vikram.prototype;
+package org.vikram.prototypepattern;
 
 interface Prototype{
     Prototype cloneObj();
