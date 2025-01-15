@@ -1,4 +1,4 @@
-package org.vikram.commanddesignpattern;
+package org.vikram.commandpattern;
 
 // Invoker
 class RemoteControl {

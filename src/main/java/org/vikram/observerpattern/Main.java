@@ -1,10 +1,9 @@
-package org.vikram.observerdesignpattern;
+package org.vikram.observerpattern;
 
-import org.vikram.observerdesignpattern.observer.EmailAlertObserver;
-import org.vikram.observerdesignpattern.observer.MobileAlertObserver;
-import org.vikram.observerdesignpattern.observer.NotificationAlertObserver;
-import org.vikram.observerdesignpattern.observerable.IphoneObservable;
-import org.vikram.observerdesignpattern.observerable.StockObservable;
+import org.vikram.observerpattern.observer.EmailAlertObserver;
+import org.vikram.observerpattern.observer.MobileAlertObserver;
+import org.vikram.observerpattern.observer.NotificationAlertObserver;
+import org.vikram.observerpattern.observerable.IphoneObservable;
 
 public class Main {
     public static void main(String[] args) {

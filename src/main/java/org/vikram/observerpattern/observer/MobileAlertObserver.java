@@ -1,6 +1,6 @@
-package org.vikram.observerdesignpattern.observer;
+package org.vikram.observerpattern.observer;
 
-import org.vikram.observerdesignpattern.observerable.IphoneObservable;
+import org.vikram.observerpattern.observerable.IphoneObservable;
 
 public class MobileAlertObserver implements NotificationAlertObserver{
     private final String phoneNo;

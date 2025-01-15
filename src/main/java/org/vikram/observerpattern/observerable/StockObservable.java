@@ -1,6 +1,6 @@
-package org.vikram.observerdesignpattern.observerable;
+package org.vikram.observerpattern.observerable;
 
-import org.vikram.observerdesignpattern.observer.NotificationAlertObserver;
+import org.vikram.observerpattern.observer.NotificationAlertObserver;
 
 public interface StockObservable {
     public void add(NotificationAlertObserver notificationAlertObserver);

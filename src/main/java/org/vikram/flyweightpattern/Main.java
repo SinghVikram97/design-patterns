@@ -1,4 +1,4 @@
-package org.vikram.flyweightdesignpattern;
+package org.vikram.flyweightpattern;
 
 import java.util.ArrayList;
 import java.util.HashMap;

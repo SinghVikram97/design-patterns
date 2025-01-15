@@ -1,4 +1,4 @@
-package org.vikram.iteratordesignpattern;
+package org.vikram.iteratorpattern;
 
 import java.util.ArrayList;
 import java.util.List;

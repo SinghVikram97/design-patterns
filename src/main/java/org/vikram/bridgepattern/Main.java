@@ -1,4 +1,4 @@
-package org.vikram.bridgedesignpattern;
+package org.vikram.bridgepattern;
 
 // Abstraction
 abstract class View{

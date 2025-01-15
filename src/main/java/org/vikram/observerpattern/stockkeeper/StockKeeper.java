@@ -1,4 +1,4 @@
-package org.vikram.observerdesignpattern.stockkeeper;
+package org.vikram.observerpattern.stockkeeper;
 
 public interface StockKeeper {
     public void setCount(int newStockAdded);

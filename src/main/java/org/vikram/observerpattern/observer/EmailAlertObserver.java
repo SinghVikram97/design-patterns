@@ -1,7 +1,6 @@
-package org.vikram.observerdesignpattern.observer;
+package org.vikram.observerpattern.observer;
 
-import org.vikram.observerdesignpattern.observerable.IphoneObservable;
-import org.vikram.observerdesignpattern.observerable.StockObservable;
+import org.vikram.observerpattern.observerable.IphoneObservable;
 
 public class EmailAlertObserver implements NotificationAlertObserver{
     private final String emailId;

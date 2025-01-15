@@ -1,7 +1,7 @@
-package org.vikram.observerdesignpattern.observerable;
+package org.vikram.observerpattern.observerable;
 
-import org.vikram.observerdesignpattern.observer.NotificationAlertObserver;
-import org.vikram.observerdesignpattern.stockkeeper.StockKeeper;
+import org.vikram.observerpattern.observer.NotificationAlertObserver;
+import org.vikram.observerpattern.stockkeeper.StockKeeper;
 
 import java.util.ArrayList;
 import java.util.List;
