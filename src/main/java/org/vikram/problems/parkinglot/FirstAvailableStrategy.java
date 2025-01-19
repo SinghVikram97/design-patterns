@@ -5,6 +5,6 @@ import java.util.Optional;
 public class FirstAvailableStrategy implements ParkingStrategy{
     @Override
     public Optional<ParkingSlot> findAvailableSpot(Vehicle vehicle, ParkingLotFloor parkingLotFloor) {
-        return Optional.empty();
+        return parkingLotFloor.getAllParkingSlots().stream().filter(parkingSlot -> parkingSlot.isAvailable() && parkingSlot.canPark(vehicle)).findFirst();
     }
 }

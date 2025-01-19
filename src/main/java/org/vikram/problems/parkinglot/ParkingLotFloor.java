@@ -29,8 +29,8 @@ public class ParkingLotFloor {
         }
     }
 
-    public Optional<ParkingSlot> findAvailableSpot(Vehicle vehicle){
-        return parkingSlots.values().stream().filter(parkingSlot -> parkingSlot.isAvailable() && parkingSlot.canPark(vehicle)).findFirst();
+    public List<ParkingSlot> getAllParkingSlots(){
+        return parkingSlots.values().stream().collect(Collectors.toUnmodifiableList());
     }
 
     public ParkingSlot getParkingSlot(int slotId){

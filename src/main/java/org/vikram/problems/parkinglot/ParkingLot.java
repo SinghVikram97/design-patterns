@@ -2,18 +2,22 @@ package org.vikram.problems.parkinglot;
 
 import java.util.HashMap;
 import java.util.Optional;
+import java.util.Random;
 
 public class ParkingLot {
     private final HashMap<Integer, ParkingLotFloor> parkingLotFloors; // floor number -> floor
     private final HashMap<String, ParkingTicket> parkingTickets; // ticket id -> parking ticket
-    private int id;
-    private ParkingLot(int id){
+
+    private final ParkingStrategy parkingStrategy;
+
+    private ParkingLot(int id, ParkingStrategy parkingStrategy){
         this.parkingLotFloors = new HashMap<>();
         this.parkingTickets = new HashMap<>();
+        this.parkingStrategy = parkingStrategy;
     }
 
     private static final class ParkingLotHolder{
-        private static final ParkingLot parkingLot = new ParkingLot(1);
+        private static final ParkingLot parkingLot = new ParkingLot(new Random().nextInt(), new FirstAvailableStrategy());
     }
 
     public static ParkingLot getParkingLot(){
@@ -34,7 +38,7 @@ public class ParkingLot {
         }
 
         ParkingLotFloor parkingLotFloor = parkingLotFloors.get(floorNumber);
-        Optional<ParkingSlot> availableSpot = parkingLotFloor.findAvailableSpot(vehicle);
+        Optional<ParkingSlot> availableSpot = parkingStrategy.findAvailableSpot(vehicle, parkingLotFloor);
 
         if(availableSpot.isEmpty()){
             throw new Exception("No available spot found");
