@@ -16,7 +16,7 @@ public class Main {
         Vehicle car3 = new Car("XYZ");
         String ticketNumber3 = parkingLot.parkVehicle(car3, 2);
 
-        parkingLot.unparkVehicle(ticketNumber1);
+        parkingLot.unparkVehicle(ticketNumber1, new DebitCardPayment("689248967", "123"));
 
         Vehicle car4 = new Car("NEW");
         // Will be parked at slot 0 at floor 2 since car1 is unparked now

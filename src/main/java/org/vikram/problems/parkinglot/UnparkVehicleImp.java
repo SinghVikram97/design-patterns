@@ -8,7 +8,7 @@ public class UnparkVehicleImp implements UnparkVehicleCommand{
     }
 
     @Override
-    public void unparkVehicle(String ticketNumber) throws Exception {
+    public void unparkVehicle(String ticketNumber, PaymentStrategy paymentStrategy) throws Exception {
         parkingLot.checkParkingTicket(ticketNumber);
         String[] ticketParts = ticketNumber.split("_");
 
@@ -19,6 +19,8 @@ public class UnparkVehicleImp implements UnparkVehicleCommand{
         ParkingLotFloor parkingLotFloor = parkingLot.getParkingLotFloor(floorNumber);
         ParkingSlot parkingSlot = parkingLotFloor.getParkingSlot(parkingSlotId);
 
+        // Calculate amount based on timestamp and current time
+        paymentStrategy.pay(1000.20);
         parkingSlot.unparkVehicle();
         parkingLot.removeParkingTicket(ticketNumber);
     }

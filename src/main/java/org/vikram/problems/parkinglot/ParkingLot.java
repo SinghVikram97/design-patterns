@@ -62,7 +62,7 @@ public class ParkingLot {
     /*
         Unpark vehicle
      */
-    public void unparkVehicle(String ticketNumber) throws Exception {
-        unparkVehicleCommand.unparkVehicle(ticketNumber);
+    public void unparkVehicle(String ticketNumber, PaymentStrategy paymentStrategy) throws Exception {
+        unparkVehicleCommand.unparkVehicle(ticketNumber, paymentStrategy);
     }
 }
