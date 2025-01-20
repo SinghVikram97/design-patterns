@@ -55,5 +55,5 @@ Behavioral patterns are concerned with algorithms and the assignment of responsi
 
 ## 4. Problems
 
-- [Parking Lot](src/main/java/org/vikram/problems/parkinglot)
+- [Parking Lot](src/main/java/org/vikram/problems/parkinglot/Main.java)
 
