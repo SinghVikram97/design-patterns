@@ -1,6 +1,6 @@
 # Design Patterns in Java
 
-This repository showcases various **Design Patterns** in Java, grouped into three main categories:
+This repository showcases various **Design Patterns** in Java, grouped into three main categories and problems related to them:
 1. **Creational Patterns**  
 2. **Structural Patterns**  
 3. **Behavioral Patterns**
@@ -52,3 +52,8 @@ Behavioral patterns are concerned with algorithms and the assignment of responsi
 - [Visitor Pattern](src/main/java/org/vikram/visitorpattern)
 
 ---
+
+## 4. Problems
+
+- [Parking Lot](src/main/java/org/vikram/problems/parkinglot)
+
