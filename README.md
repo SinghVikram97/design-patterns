@@ -13,7 +13,7 @@ Below is a list of all patterns currently included, with links to their respecti
 
 Creational patterns deal with object creation mechanisms, trying to create objects in a manner suitable to the situation. The goal is to abstract the instantiation process.
 
-- [Factory Method Pattern](src/main/java/org/vikram/factorymethodpattern) 
+- [Factory Method Pattern](src/main/java/org/vikram/factorypattern) 
 - [Abstract Factory Pattern](src/main/java/org/vikram/abstractfactorypattern)
 - [Singleton Pattern](src/main/java/org/vikram/singletonpattern)
 - [Builder Pattern](src/main/java/org/vikram/builderpattern)   
